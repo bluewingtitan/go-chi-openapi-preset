@@ -1,0 +1,44 @@
+openapi: "3.0.0"
+
+info:
+  version: 1.0.0
+  title: API NAME
+
+tags:
+  - name: example
+    description: ...
+
+paths:
+  /example:
+    get:
+      tags:
+        - example
+      responses:
+        2XX:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/string'
+          description: example endpoint
+
+components:
+  schemas:
+    empty:
+      type: object
+      description: Empty
+    string:
+      type: string
+      description: String Content
+  parameters:
+    auth_cookie:
+      in: header
+      name: Authorization
+      required: true
+      schema:
+        type: string
+        example: "BEARER sk_kasdpodp0q2390u9efwj0802d3989"
+  securitySchemes:
+    jwtAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
