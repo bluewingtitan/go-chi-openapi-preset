@@ -5,8 +5,6 @@ It is opinionated towards [hexagonal architecture](https://medium.com/ssense-tec
 
 I mainly use it for consistency, as a quick jump off point for small side projects.
 
-Feel free to fork and build upon.
-
 It offers a starting point with the things any server should probably have:
  - logging (with zerolog in this case)
  - configuration (using yaml in this case)
@@ -35,3 +33,10 @@ go get -tool github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen@latest
 ````shell
 go tool oapi-codegen -config ./api-definition/oapi-codegen.yml ./api-definition/openapi.yaml
 ````
+
+### Contribution
+Feel free to fork and build derrived templates and projects.
+
+PRs will be accepted if they fix a problem with the existing setup. 
+
+PRs for additional features will be closed, as they are probably not in the spirit of this template.
