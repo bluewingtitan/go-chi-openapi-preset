@@ -22,11 +22,9 @@ After forking:
 
 ### Development:
 
-Prereqs:
-- Docker (if dockerfile should be used)
+Sync the mod how you normally would.
 
-Install go how you normally would. Sync the mod how you normally would.
-
+(Once): Make sure oapi-codegen is installed
 ````shell
 go get -tool github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen@latest
 ````
